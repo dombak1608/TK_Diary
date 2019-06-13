@@ -38,14 +38,11 @@
             this.bazaPodatakaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.spremiPromjeneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.preuzmiPromjeneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pomoćToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kakoSeKoristiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kontaktToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.oAplikacijiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pomocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPlayers = new System.Windows.Forms.Button();
             this.btnTournaments = new System.Windows.Forms.Button();
             this.btnStatistics = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnStandings = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -69,7 +66,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.općenitoToolStripMenuItem,
             this.bazaPodatakaToolStripMenuItem,
-            this.pomoćToolStripMenuItem});
+            this.pomocToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
@@ -110,31 +107,10 @@
             this.preuzmiPromjeneToolStripMenuItem.Name = "preuzmiPromjeneToolStripMenuItem";
             resources.ApplyResources(this.preuzmiPromjeneToolStripMenuItem, "preuzmiPromjeneToolStripMenuItem");
             // 
-            // pomoćToolStripMenuItem
+            // pomocToolStripMenuItem
             // 
-            this.pomoćToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.kakoSeKoristiToolStripMenuItem,
-            this.kontaktToolStripMenuItem,
-            this.oAplikacijiToolStripMenuItem});
-            this.pomoćToolStripMenuItem.Name = "pomoćToolStripMenuItem";
-            resources.ApplyResources(this.pomoćToolStripMenuItem, "pomoćToolStripMenuItem");
-            // 
-            // kakoSeKoristiToolStripMenuItem
-            // 
-            this.kakoSeKoristiToolStripMenuItem.Name = "kakoSeKoristiToolStripMenuItem";
-            resources.ApplyResources(this.kakoSeKoristiToolStripMenuItem, "kakoSeKoristiToolStripMenuItem");
-            // 
-            // kontaktToolStripMenuItem
-            // 
-            this.kontaktToolStripMenuItem.Name = "kontaktToolStripMenuItem";
-            resources.ApplyResources(this.kontaktToolStripMenuItem, "kontaktToolStripMenuItem");
-            this.kontaktToolStripMenuItem.Click += new System.EventHandler(this.kontaktToolStripMenuItem_Click);
-            // 
-            // oAplikacijiToolStripMenuItem
-            // 
-            this.oAplikacijiToolStripMenuItem.Name = "oAplikacijiToolStripMenuItem";
-            resources.ApplyResources(this.oAplikacijiToolStripMenuItem, "oAplikacijiToolStripMenuItem");
-            this.oAplikacijiToolStripMenuItem.Click += new System.EventHandler(this.oAplikacijiToolStripMenuItem_Click);
+            this.pomocToolStripMenuItem.Name = "pomocToolStripMenuItem";
+            resources.ApplyResources(this.pomocToolStripMenuItem, "pomocToolStripMenuItem");
             // 
             // btnPlayers
             // 
@@ -156,17 +132,17 @@
             this.btnStatistics.Name = "btnStatistics";
             this.btnStatistics.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnStandings
             // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnStandings, "btnStandings");
+            this.btnStandings.Name = "btnStandings";
+            this.btnStandings.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.btnTournaments, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button4, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnStandings, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnPlayers, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnStatistics, 1, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -178,10 +154,12 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "FormMain";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -202,15 +180,12 @@
         private System.Windows.Forms.ToolStripMenuItem bazaPodatakaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem spremiPromjeneToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem preuzmiPromjeneToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pomoćToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kakoSeKoristiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kontaktToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem oAplikacijiToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem pomocToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.Button btnPlayers;
         private System.Windows.Forms.Button btnTournaments;
         private System.Windows.Forms.Button btnStatistics;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnStandings;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

@@ -121,6 +121,12 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="toolStripStatusLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 17</value>
+  </data>
+  <data name="toolStripStatusLabel1.Text" xml:space="preserve">
+    <value>Status: OK</value>
+  </data>
   <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 707</value>
   </data>
@@ -146,15 +152,27 @@
   <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="toolStripStatusLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 17</value>
-  </data>
-  <data name="toolStripStatusLabel1.Text" xml:space="preserve">
-    <value>Status: OK</value>
-  </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>133, 17</value>
   </metadata>
+  <data name="općenitoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 20</value>
+  </data>
+  <data name="općenitoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Općenito</value>
+  </data>
+  <data name="bazaPodatakaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 20</value>
+  </data>
+  <data name="bazaPodatakaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Baza podataka</value>
+  </data>
+  <data name="pomocToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 20</value>
+  </data>
+  <data name="pomocToolStripMenuItem.Text" xml:space="preserve">
+    <value>Pomoć</value>
+  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -179,12 +197,6 @@
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="općenitoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 20</value>
-  </data>
-  <data name="općenitoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Općenito</value>
-  </data>
   <data name="osvježiToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 22</value>
   </data>
@@ -196,12 +208,6 @@
   </data>
   <data name="zatvoriAplikacijuToolStripMenuItem.Text" xml:space="preserve">
     <value>Zatvori aplikaciju</value>
-  </data>
-  <data name="bazaPodatakaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 20</value>
-  </data>
-  <data name="bazaPodatakaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Baza podataka</value>
   </data>
   <data name="spremiPromjeneToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>171, 22</value>
@@ -215,33 +221,12 @@
   <data name="preuzmiPromjeneToolStripMenuItem.Text" xml:space="preserve">
     <value>Preuzmi promjene</value>
   </data>
-  <data name="pomoćToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 20</value>
-  </data>
-  <data name="pomoćToolStripMenuItem.Text" xml:space="preserve">
-    <value>Pomoć</value>
-  </data>
-  <data name="kakoSeKoristiToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="kakoSeKoristiToolStripMenuItem.Text" xml:space="preserve">
-    <value>Kako se koristi</value>
-  </data>
-  <data name="kontaktToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="kontaktToolStripMenuItem.Text" xml:space="preserve">
-    <value>Kontakt</value>
-  </data>
-  <data name="oAplikacijiToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="oAplikacijiToolStripMenuItem.Text" xml:space="preserve">
-    <value>O aplikaciji</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnPlayers.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="btnPlayers.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 21.75pt, style=Bold</value>
   </data>
   <data name="btnPlayers.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 30</value>
@@ -272,6 +257,9 @@
   </data>
   <data name="btnTournaments.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="btnTournaments.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 21.75pt, style=Bold</value>
   </data>
   <data name="btnTournaments.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -309,6 +297,9 @@
   <data name="btnStatistics.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="btnStatistics.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 21.75pt, style=Bold</value>
+  </data>
   <data name="btnStatistics.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -339,40 +330,43 @@
   <data name="&gt;&gt;btnStatistics.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="button4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="btnStandings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="button4.Enabled" type="System.Boolean, mscorlib">
+  <data name="btnStandings.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnStandings.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 21.75pt, style=Bold</value>
+  </data>
+  <data name="btnStandings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnStandings.Location" type="System.Drawing.Point, System.Drawing">
     <value>678, 367</value>
   </data>
-  <data name="button4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnStandings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 27</value>
   </data>
-  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnStandings.Size" type="System.Drawing.Size, System.Drawing">
     <value>669, 335</value>
   </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnStandings.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="button4.Text" xml:space="preserve">
-    <value>button4</value>
+  <data name="btnStandings.Text" xml:space="preserve">
+    <value>Bodovi</value>
   </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
+  <data name="&gt;&gt;btnStandings.Name" xml:space="preserve">
+    <value>btnStandings</value>
   </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnStandings.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnStandings.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnStandings.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
@@ -406,7 +400,7 @@
     <value>2</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnTournaments" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button4" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="btnPlayers" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnStatistics" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnTournaments" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnStandings" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="btnPlayers" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnStatistics" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -3382,28 +3376,10 @@
   <data name="&gt;&gt;preuzmiPromjeneToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pomoćToolStripMenuItem.Name" xml:space="preserve">
-    <value>pomoćToolStripMenuItem</value>
+  <data name="&gt;&gt;pomocToolStripMenuItem.Name" xml:space="preserve">
+    <value>pomocToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;pomoćToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;kakoSeKoristiToolStripMenuItem.Name" xml:space="preserve">
-    <value>kakoSeKoristiToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;kakoSeKoristiToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;kontaktToolStripMenuItem.Name" xml:space="preserve">
-    <value>kontaktToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;kontaktToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;oAplikacijiToolStripMenuItem.Name" xml:space="preserve">
-    <value>oAplikacijiToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;oAplikacijiToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;pomocToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

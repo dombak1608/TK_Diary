@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPlayers));
             this.dataGridViewPlayers = new System.Windows.Forms.DataGridView();
             this.buttonInsert = new System.Windows.Forms.Button();
@@ -49,14 +50,22 @@
             this.label7 = new System.Windows.Forms.Label();
             this.labelID = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.database1DataSet = new TK_dnevnik.database1DataSet();
+            this.database1DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlayers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewPlayers
             // 
+            this.dataGridViewPlayers.AllowUserToAddRows = false;
+            this.dataGridViewPlayers.AllowUserToDeleteRows = false;
             this.dataGridViewPlayers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPlayers.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2;
             this.dataGridViewPlayers.Location = new System.Drawing.Point(12, 12);
             this.dataGridViewPlayers.Name = "dataGridViewPlayers";
+            this.dataGridViewPlayers.ShowEditingIcon = false;
             this.dataGridViewPlayers.Size = new System.Drawing.Size(843, 553);
             this.dataGridViewPlayers.TabIndex = 10;
             this.dataGridViewPlayers.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewPlayers_RowHeaderMouseClick);
@@ -68,7 +77,7 @@
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 55);
             this.buttonInsert.TabIndex = 7;
-            this.buttonInsert.Text = "Upiši";
+            this.buttonInsert.Text = "Upiši novog";
             this.buttonInsert.UseVisualStyleBackColor = true;
             this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
@@ -78,7 +87,7 @@
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(75, 55);
             this.buttonUpdate.TabIndex = 8;
-            this.buttonUpdate.Text = "Izmjeni";
+            this.buttonUpdate.Text = "Izmjeni odabranog";
             this.buttonUpdate.UseVisualStyleBackColor = true;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -88,7 +97,7 @@
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(75, 56);
             this.buttonDelete.TabIndex = 9;
-            this.buttonDelete.Text = "Obriši";
+            this.buttonDelete.Text = "Obriši odabranog";
             this.buttonDelete.UseVisualStyleBackColor = true;
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
@@ -222,7 +231,7 @@
             // labelID
             // 
             this.labelID.AutoSize = true;
-            this.labelID.Location = new System.Drawing.Point(966, 9);
+            this.labelID.Location = new System.Drawing.Point(994, 11);
             this.labelID.Name = "labelID";
             this.labelID.Size = new System.Drawing.Size(13, 13);
             this.labelID.TabIndex = 18;
@@ -232,17 +241,27 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(905, 9);
+            this.label8.Location = new System.Drawing.Point(880, 11);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 13);
+            this.label8.Size = new System.Drawing.Size(112, 13);
             this.label8.TabIndex = 19;
-            this.label8.Text = "Redni broj:";
+            this.label8.Text = "Redni broj odabranog:";
+            // 
+            // database1DataSet
+            // 
+            this.database1DataSet.DataSetName = "database1DataSet";
+            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // database1DataSetBindingSource
+            // 
+            this.database1DataSetBindingSource.DataSource = this.database1DataSet;
+            this.database1DataSetBindingSource.Position = 0;
             // 
             // FormPlayers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1164, 580);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.labelID);
             this.Controls.Add(this.label7);
@@ -263,20 +282,23 @@
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonInsert);
             this.Controls.Add(this.dataGridViewPlayers);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FormPlayers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Igrači";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormPlayers_FormClosed);
             this.Load += new System.EventHandler(this.FormPlayers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlayers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridViewPlayers;
         private System.Windows.Forms.Button buttonInsert;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonDelete;
@@ -296,5 +318,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label labelID;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridView dataGridViewPlayers;
+        private System.Windows.Forms.BindingSource database1DataSetBindingSource;
+        private database1DataSet database1DataSet;
     }
 }

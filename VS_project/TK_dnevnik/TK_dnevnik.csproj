@@ -26,7 +26,7 @@
     <ProductName>Teniski dnevnik</ProductName>
     <PublisherName>Domagoj Karl</PublisherName>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -68,6 +68,8 @@
     <ApplicationIcon>Custom-Icon-Design-Flatastic-10-Sport-tennis.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="IronPython, Version=2.7.9.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Scripting, Version=1.2.2.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -111,6 +113,13 @@
     <Compile Include="FormZdrijeb.Designer.cs">
       <DependentUpon>FormZdrijeb.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormZdrijebDodavanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZdrijebDodavanje.Designer.cs">
+      <DependentUpon>FormZdrijebDodavanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="klase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormMain.resx">
@@ -124,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormZdrijeb.resx">
       <DependentUpon>FormZdrijeb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZdrijebDodavanje.resx">
+      <DependentUpon>FormZdrijebDodavanje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

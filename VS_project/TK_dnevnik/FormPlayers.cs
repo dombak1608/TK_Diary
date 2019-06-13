@@ -73,11 +73,11 @@ namespace TK_dnevnik
         private void FormPlayers_Load(object sender, EventArgs e)
         {
             BindDataPlayers();
-            dataGridViewPlayers.Rows[0].Cells[0].Selected = true;
-            if(dataGridViewPlayers.Rows[0].Cells[0].Value != null)
-            {
-                labelID.Text = dataGridViewPlayers.Rows[0].Cells[0].Value.ToString();
-            }
+            //dataGridViewPlayers.Rows[0].Cells[0].Selected = true;
+            //if (dataGridViewPlayers.Rows[0].Cells[0].Value != null)
+            //{
+            //    labelID.Text = dataGridViewPlayers.Rows[0].Cells[0].Value.ToString();
+            //}
         }
         private void BindDataPlayers()
         {
@@ -109,7 +109,7 @@ namespace TK_dnevnik
                     FormMain.myConnection.Open();
                     try
                     {
-                        string mySqlString = "UPDATE Igraci SET Ime = @Ime, Prezime = @Prezime, Visina = @Visina, Desnjak = @Desnjak, DvorucniBekend = @Bekend, GlavnoOruzje = @Oruzje, ClanOd = ClanOd WHERE igracID = @iID";
+                        string mySqlString = "UPDATE Igraci SET Ime = @Ime, Prezime = @Prezime, Visina = @Visina, Desnjak = @Desnjak, DvorucniBekend = @Bekend, GlavnoOruzje = @Oruzje, ClanOd = @ClanOd WHERE igracID = @iID";
                         //@Ime, @Prezime, @Visina, @Desnjak, @Bekend, @Oruzje, @ClanOd
                         SqlCommand myCom = new SqlCommand(mySqlString, FormMain.myConnection);
 
@@ -145,7 +145,7 @@ namespace TK_dnevnik
                     FormMain.myConnection.Close();
                 }
                 BindDataPlayers();
-            }            
+            }
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)
@@ -176,27 +176,24 @@ namespace TK_dnevnik
 
         private void dataGridViewPlayers_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            labelID.Text = dataGridViewPlayers.SelectedRows[0].Cells[0].Value.ToString();
+            int b = (int)dataGridViewPlayers.Rows[dataGridViewPlayers.SelectedCells[0].RowIndex].Cells[0].Value;
+            labelID.Text = b.ToString();
         }
 
         private void dataGridViewPlayers_SelectionChanged(object sender, EventArgs e)
         {
             if (dataGridViewPlayers.Focused && dataGridViewPlayers.SelectedCells.Count == 1)
             {
-                String celija = dataGridViewPlayers.SelectedCells[0].RowIndex.ToString();
-                int odabranRow;
-                Int32.TryParse(celija, out odabranRow);
-                labelID.Text = dataGridViewPlayers.Rows[odabranRow].Cells[0].Value.ToString();
+                int b = (int)dataGridViewPlayers.Rows[dataGridViewPlayers.SelectedCells[0].RowIndex].Cells[0].Value;
+                labelID.Text = b.ToString();
             }
         }
 
         private void labelID_TextChanged(object sender, EventArgs e)
         {
-            if(dataGridViewPlayers.Focused && dataGridViewPlayers.SelectedCells.Count == 1 && (dataGridViewPlayers.RowCount-1) > dataGridViewPlayers.SelectedCells[0].RowIndex)
+            if(dataGridViewPlayers.Focused && dataGridViewPlayers.SelectedCells.Count == 1 && dataGridViewPlayers.RowCount > dataGridViewPlayers.SelectedCells[0].RowIndex)
             {
-                String celija = dataGridViewPlayers.SelectedCells[0].RowIndex.ToString();
-                int odabranRow;
-                Int32.TryParse(celija, out odabranRow);
+                int odabranRow = (int)dataGridViewPlayers.SelectedCells[0].RowIndex;
                 tbIme.Text = dataGridViewPlayers.Rows[odabranRow].Cells[1].Value.ToString();
                 tbPrezime.Text = dataGridViewPlayers.Rows[odabranRow].Cells[2].Value.ToString();
                 tbVisina.Text = dataGridViewPlayers.Rows[odabranRow].Cells[3].Value.ToString();
